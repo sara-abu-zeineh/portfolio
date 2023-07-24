@@ -19,9 +19,9 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
 }
-section{
+/* section{
     height: 100vh;
-}
+} */
 h1,h2,h3,h4,h5,h6,a,p,small{
     font-family: 'Raleway', sans-serif;
 }
@@ -31,4 +31,44 @@ a{
 }
 li{
     list-style-type: none;
+}
+/* Header section style */
+header{
+    display: flex;
+    padding: 1rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    height: 8rem;
+    > h1 {
+        font-size: clamp(1rem, -0.1639rem + 2.6604vw, 3.125rem);
+        font-weight: 900;
+        letter-spacing: .13rem;
+        color: var(--black);
+        cursor: pointer;
+        transition: color .3s ease-in-out;    
+    }:hover{
+        color: var(--golden-orange);
+    }
+    >section{
+        display: flex;
+        align-items: center;
+        .ul-list{
+            display: flex;
+            gap:clamp(0.3125rem, -0.0641rem + 0.8607vw, 1rem);;
+            font-size: clamp(0.8125rem, 0.2305rem + 1.3302vw, 1.35rem);
+            >li a{
+                color: var(--black);
+                font-weight: 700;
+                letter-spacing: .12rem;
+                transition: color .2s ease-in-out;
+            }:hover{
+                color: var(--golden-orange);
+            }
+        }
+    }    
 }
