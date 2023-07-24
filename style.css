@@ -1,0 +1,34 @@
+*,*::after ,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+     overflow-x: hidden;
+}
+:root{
+    --black : #000;
+    --golden-orange : #F9A602;
+    --white :#fff;
+    --golden-orange-shadow: rgba(202, 200, 198, 0.9);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+section{
+    height: 100vh;
+}
+h1,h2,h3,h4,h5,h6,a,p,small{
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
