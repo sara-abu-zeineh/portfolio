@@ -19,9 +19,6 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
 }
-/* section{
-    height: 100vh;
-} */
 h1,h2,h3,h4,h5,h6,a,p,small{
     font-family: 'Raleway', sans-serif;
 }
@@ -146,3 +143,59 @@ header{
         width:80vw;
     }
   }  
+/* Home section style */
+#home{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    --duration:.9s;
+    animation: fadeIn var(--duration) ease-in ;
+    >.welcoming-text{
+        font-family: 'Teko', sans-serif;
+        width: 10em;
+        font-size: clamp(3.4rem, 0.008rem + 5.975vw, 7.375rem);
+        text-align: center;
+        cursor: default;
+        margin-bottom: .2em;
+        >span{
+            color: var(--golden-orange);
+        }
+    }::selection, .welcoming-text span::selection{
+        background: var(--golden-orange);
+        color: var(--white);
+    }
+    >.tagline{
+        font-size: clamp(1.25rem, 0.008rem + 1.375vw, 2.8rem);
+        text-align: center;
+        padding: 0em 2em;
+        margin-bottom: .4em;
+        width: 90%;
+    } 
+    >.download{
+        background-color: var(--golden-orange);
+        color: var(--white);
+        font-size:clamp(1.15rem, 0.008rem + 1.475vw, 2.7rem);
+        padding: .65em 1.4em;
+        margin-top: 1em;
+        border-radius: 2em;
+        outline: 2px solid var(--white); 
+        outline-offset: -5px;  
+        transition: all .3s ease-in-out; 
+    }:hover{
+        outline-offset: 5px;  
+        outline-color: var(--golden-orange);
+    }
+}
+/* FideIn animation  */
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
