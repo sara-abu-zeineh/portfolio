@@ -32,6 +32,9 @@ a{
 li{
     list-style-type: none;
 }
+i{
+    cursor: pointer;
+}
 /* Header section style */
 header{
     display: flex;
@@ -43,7 +46,7 @@ header{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(5px);
     z-index: 10;
-    height: 8rem;
+    height: 7rem;
     > h1 {
         font-size: clamp(1rem, -0.1639rem + 2.6604vw, 3.125rem);
         font-weight: 900;
@@ -70,5 +73,71 @@ header{
                 color: var(--golden-orange);
             }
         }
+        #hidden-bar{
+            color: var(--black);
+            display: none;
+            font-size: clamp(1.0125rem, -0.1118rem + 2.1127vw, 2.3rem);
+        }           
     }    
 }
+.drop-down{
+    display: none;
+}
+/* Media Query for Header */
+@media (max-width: 780px) {
+    header{
+        .nav-list{
+            display: none;
+        }
+        >section{
+        #hidden-bar{
+            display:block;
+        }}
+    }
+    .ul-list{
+        gap:clamp(0.3125rem, -0.0641rem + 0.8607vw, 1rem);;
+        font-size: clamp(0.8125rem, 0.2305rem + 1.3302vw, 1.35rem);
+        >li a{
+            color: var(--black);
+            font-weight: 700;
+            letter-spacing: .12rem;
+            transition: color .2s ease-in-out;
+        }:hover{
+            color: var(--golden-orange);
+        }
+    }
+    .drop-down{
+        display: flex;
+        flex-direction: row;
+        width:30rem;
+        height: 0rem;
+        position: fixed;
+        right: 4rem;
+        top: 7rem;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(5px);
+        background-color: rgba(172, 153, 153, 0.1);
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 0px;
+        transition: height .9s cubic-bezier(0.215, 0.610, 0.355, 1)
+    }
+    .drop-down.open{
+        height: 15rem;
+        padding: 2rem 4rem;
+    }
+    .open{
+        display: flex;
+    }
+    .ul-list li{
+        padding: .7rem;
+        text-align: center;
+    }
+  }
+  @media (max-width: 500px) {
+    .drop-down{
+        width:80vw;
+    }
+  }  
