@@ -71,7 +71,24 @@ li{
             background: var(--cl);
             inset : -1rem 8rem;  
             z-index: 1;  
+            --rotate-duration:8s;
+            --trans-duration:.5s;
+            animation: rotate var(--rotate-duration) linear infinite; 
+            transition: inset var(--trans-duration) ease-in-out ;
+            cursor: pointer;
         }
-       
+        &:hover::before{
+            animation-play-state: paused;
+            inset: -1rem 0rem;
+        }
     }
+}
+/* rotate animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
 }
