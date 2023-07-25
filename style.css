@@ -139,6 +139,11 @@ li{
                         border-bottom: 2px ridge var(--white);
                     }
                 }
+                &:hover .card::after,&:hover .card::before{
+                    border-color: transparent;
+                    width: 0%;
+                    height: 0%;
+                }
             }
         }
         >h4{
