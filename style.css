@@ -163,4 +163,53 @@ li{
         transform: rotate(360deg);
       }
 }
-
+/* media query for About-me section */
+@media screen and (max-width: 977px ) {
+    #about{
+        >.cards-section{
+            width: 50%;
+            >.cards{
+                >.card-container{
+                    >.card{
+                        padding: 2rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 777px ) {
+    #about{
+        >.cards-section{
+            width: 55%;
+            >.cards{
+                >.card-container{
+                    >.card{
+                        width:10rem ;
+                        padding: 2rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px ) {
+    #about{
+        flex-direction: column;
+        >.image-section{
+            margin-bottom: 3rem;
+        }
+        >.cards-section{
+            width: 80%;
+            margin-left: 0rem;
+            >.cards{
+                >.card-container{
+                    >.card{
+                        width:9rem ;
+                        padding: 2rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
