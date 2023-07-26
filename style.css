@@ -54,5 +54,13 @@ li{
                 }
             }
         }
+        >i{
+            position: absolute;
+            top: 1.2rem; 
+            font-size: 4rem;
+            z-index: 3;
+            color: var(--golden-orange);
+            left: -1.5rem;
+        }
     }
 }
