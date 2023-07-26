@@ -19,9 +19,6 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
 }
-section{
-    height: 100vh;
-}
 h1,h2,h3,h4,h5,h6,a,p,small{
     font-family: 'Raleway', sans-serif;
 }
@@ -31,4 +28,31 @@ a{
 }
 li{
     list-style-type: none;
+}
+.timeline{
+    background-color: antiquewhite;
+    height: 100vh;
+    >.container{
+        /* padding: 1rem 5rem; */
+        position: relative;
+        width: 34rem;
+        margin: 0 auto;
+        border: 2px solid var(--golden-orange);
+        border-radius: 1.6rem;
+        padding: 1rem;
+        >.CompanyLogo{
+            display: flex;
+            align-items: center;
+            >img{
+               /* border-radius: 50%; */
+               margin-right: 1rem;
+            }
+            >a{
+                color: var(--black);
+                >h3{
+                    font-size: clamp(1.0125rem, -0.0641rem + 1.0607vw, 3rem);
+                }
+            }
+        }
+    }
 }
