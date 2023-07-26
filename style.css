@@ -36,6 +36,7 @@ li{
         /* padding: 1rem 5rem; */
         position: relative;
         width: 34rem;
+        height: 13rem;
         margin: 0 auto;
         border: 2px solid var(--golden-orange);
         border-radius: 1.6rem;
@@ -46,6 +47,8 @@ li{
             >img{
                /* border-radius: 50%; */
                margin-right: 1rem;
+               width: 4rem;
+               height: 4rem;
             }
             >a{
                 color: var(--black);
@@ -54,13 +57,26 @@ li{
                 }
             }
         }
+        >.text-card{
+            margin-top: .5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: fit-content;
+            min-height: calc(73% - 2rem); 
+        }
         >i{
             position: absolute;
-            top: 1.2rem; 
             font-size: 4rem;
             z-index: 3;
+            top: 1.2rem; 
             color: var(--golden-orange);
+        }  
+        >i.right-arrow{
             left: -1.5rem;
+        }
+        >i.left-arrow{
+            right: -1.5rem;
         }
     }
 }
