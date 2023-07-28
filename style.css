@@ -89,6 +89,7 @@ li{
                 color: var(--white);
                 z-index: 3;
                 text-transform: uppercase;
+                transition: all 1s ease-in;
             }
              
             > p ,a {
@@ -99,6 +100,7 @@ li{
                 width: 80%;
                 color: var(--primary-white);
                 bottom: 0; 
+                transition: bottom 1s .4S ease-out, opacity .5s ease-in; 
             }
             >p{
                 font-size: 1.1rem;
@@ -108,6 +110,24 @@ li{
                 bottom: 0; 
                 font-weight: 600;
             } 
+            &:hover h2 {
+                bottom: 50%;
+                color: var(--black);
+                transition: all 1s ease-out;
+            }
+            &:hover  p {
+                bottom: 10%;
+                opacity: 1;
+            }
+            &:hover a {
+                bottom: 2rem;
+                opacity: 1;
+            }
+            &:hover img {
+                transition: opacity 1s ease-in;
+                opacity: 1;
+            }
         }   
     }
+
 }
