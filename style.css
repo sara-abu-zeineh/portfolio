@@ -15,6 +15,7 @@ html{
     --white :#fff;
     --primary-white: rgb(240, 240, 240);
     --golden-orange-shadow: rgba(206, 200, 195, 0.9);
+    --scroll-bar-hovering:#f1c876;
 }
 html{
     font-size: 62.5%;
@@ -59,14 +60,29 @@ li{
         }        
     }
     >.projects-wrapper{
+        height: fit-content;
+        overflow-x: auto;
+        width: 100vw;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: inline mandatory; 
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow: column;
+        grid-auto-columns: 22%;
+        position: absolute;
+        padding: 0 0 1rem;
+        top: 45%;
+        >*{
+            scroll-snap-align: start;
+        }
         >.project-card{
             width: 24rem;
-            height: 36rem;
+            height: 30rem;
             border-radius: 10px;
             overflow: hidden;
             cursor: pointer;
             position: relative;
-            color: var(--blacke);
+            color: var(--black);
             box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
             >img{
                 position: absolute;
@@ -127,7 +143,8 @@ li{
                 transition: opacity 1s ease-in;
                 opacity: 1;
             }
-        }   
+        }
+       
     }
 
 }
