@@ -34,6 +34,7 @@ li{
 .projects{
     width: 100vw;
     height: 100vh;
+    position: relative;
     .background{
         position: relative;
         width: 100%;
@@ -42,7 +43,7 @@ li{
         color: var(--white);
         flex-direction: column;
         align-items: center;
-        padding: 5rem 6rem 2rem;
+        padding: 19vh 6rem 2rem;
         background-color: var(--golden-orange);
         box-shadow: -1px 0px 18px -1px var(--golden-orange-shadow)inset;
         -webkit-box-shadow: -1px 0px 18px -1px var(--golden-orange-shadow) inset;
@@ -54,24 +55,23 @@ li{
         >h2{
             font-size: clamp(1.25rem, 0.008rem + 1.7vw, 2rem);
             text-align: center;
-            padding: 0em 2em;
             margin-bottom: .4em;
             width: 70vw;
         }        
     }
     >.projects-wrapper{
-        height: fit-content;
         overflow-x: auto;
         width: 100vw;
+        height: fit-content;
         overscroll-behavior-inline: contain;
         scroll-snap-type: inline mandatory; 
         display: grid;
-        gap: 1rem;
+        gap: 2rem;
         grid-auto-flow: column;
-        grid-auto-columns: 22%;
+        grid-auto-columns: calc(24rem + 1vw);
         position: absolute;
-        padding: 0 0 1rem;
-        top: 45%;
+        padding: 1rem 0 1rem;
+        top: 45vh;
         >*{
             scroll-snap-align: start;
         }
@@ -102,7 +102,7 @@ li{
             cursor: pointer;
             position: relative;
             color: var(--black);
-            box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+            /* box-shadow: 0 10px 12px 5px rgba(0, 0, 0, 0.2); */
             >img{
                 position: absolute;
                 object-fit: cover;
@@ -166,4 +166,40 @@ li{
        
     }
 
+}
+@media screen and (min-width: 1301px) and (max-width: 2600px) {
+    .projects-wrapper{
+        /* padding-top: 20vh !important; */
+        top: 54% !important;
+    }    
+}
+@media screen and (max-width: 1250px) {
+    .projects-wrapper{
+        /* padding-top: 20vh !important; */
+        top: 43% !important;
+    }    
+}
+@media screen and (max-width: 1000px) {
+    .projects-wrapper{
+        /* padding-top: 40% !important; */
+        top:45% !important;
+    }    
+}
+@media screen and (max-width: 890px) {
+    .projects-wrapper{
+        /* padding-top: 40% !important; */
+        top:41% !important;
+    }    
+}
+
+@media screen and (max-width: 500px) {
+    .projects-wrapper{
+        /* padding-top: 40% !important; */
+        top:50% !important;
+        grid-auto-columns: 47% !important;
+        >.project-card{
+            width: 18rem !important;
+            height: 20rem !important;
+        }
+    }    
 }
