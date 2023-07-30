@@ -771,3 +771,96 @@ header{
             height: 20rem !important;
         }
     }    
+#contact{
+    width: 100%;
+    height: calc(50vh + 4rem);
+    color: var(--white);
+    background-color: var(--golden-orange);
+    padding:calc(5% + .8rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    >h2{
+        font-size: clamp(1.7rem, 0.008rem + 2.975vw, 3.175rem);
+        text-align: center;
+        > span{
+            font-size: clamp(3rem, 0.008rem + 5vw, 5.575rem);
+            font-family: 'Satisfy', cursive;
+            display: inline-block;
+            margin: 0 .5rem;
+        }
+    }
+    >h4{
+        font-size: clamp(1.2rem, 0.008rem + 1.975vw, 1.9rem);
+        width:calc(40% + 1rem); 
+        text-align: center;
+    }
+    >.contact-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        >*{
+            margin-top: 2rem;
+        }
+        >.inputs-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            >input{
+                border:none; 
+                border-radius:22px;
+                width:100%;
+                padding:.7rem 1rem; 
+                outline: 2px solid var(--white);
+                outline-offset: 3px;
+                &:first-of-type{
+                    margin-right: 1.4rem;
+                }
+            }
+        }
+        >button{ 
+            background-color: transparent;
+            color: var(--white);
+            font-size:clamp(1.15rem, 0.008rem + 1.475vw, 1.5rem);
+            padding:.48rem 1rem; 
+            border-radius: 2.5em;
+            border: 1.8px solid var(--white);
+            outline: 1.8px solid var(--white); 
+            outline-offset: -.3rem;
+            cursor: pointer;
+            transition: outline-offset .3s ease-in-out; 
+            &:hover{
+                outline-offset: 2px;  
+            }
+        }
+    }
+    >.accounts-links{
+        margin-top: 1rem;
+        >a{
+            >i{
+                font-size: 2rem;
+                cursor: pointer;
+                color: var(--white);
+            }
+        }
+        >a + a{
+            margin-left: 1rem;
+        }
+    }
+}
+::placeholder{
+    font-size:clamp(1.1rem, 0.008rem + 1.275vw, 1.4rem);
+}
+@media screen and (max-width:100rem) {
+    h4{
+        width:calc(67% + 1rem) !important; 
+    }
+    input{
+        width: calc(39% + 1rem)!important ;
+        padding: 0.7rem 1rem !important;
+    }
+    
+}
