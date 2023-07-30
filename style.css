@@ -7,15 +7,21 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-     overflow-x: hidden;
+    overflow-x: hidden;
 }
 :root{
     --black : #000;
     --golden-orange : #F9A602;
     --white :#fff;
+    --primary-white: rgb(240, 240, 240);
     --golden-orange-shadow: rgba(202, 200, 198, 0.9);
     --light-orange : rgb(255, 224, 161);
     --cl :#cf9114;
+    --scroll-bar-hovering:#f1c876;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 body{
     width: 100vw;
@@ -586,3 +592,182 @@ header{
         }
     }
 }
+.projects{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    .background{
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        padding: 19vh 6rem 2rem;
+        background-color: var(--golden-orange);
+        box-shadow: -1px 0px 18px -1px var(--golden-orange-shadow)inset;
+        -webkit-box-shadow: -1px 0px 18px -1px var(--golden-orange-shadow) inset;
+        -moz-box-shadow: -1px 0px 18px -1px var(--golden-orange-shadow) inset;
+        >p{
+            font-family: 'Teko', sans-serif;
+            font-size: clamp(3.25rem, 0.008rem + 4.975vw, 5.375rem);
+        }
+        >h2{
+            font-size: clamp(1.25rem, 0.008rem + 1.7vw, 2rem);
+            text-align: center;
+            margin-bottom: .4em;
+            width: 70vw;
+        }        
+    }
+    >.projects-wrapper{
+        overflow-x: auto;
+        width: 100vw;
+        height: fit-content;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: inline mandatory; 
+        display: grid;
+        gap: 2rem;
+        grid-auto-flow: column;
+        grid-auto-columns: calc(24rem + 1vw);
+        position: absolute;
+        padding: 1rem 0 1rem;
+        top: 45vh;
+        >*{
+            scroll-snap-align: start;
+        }
+        &::-webkit-scrollbar {
+            height:1rem ;  
+            cursor: move;
+          }
+          
+          &::-webkit-scrollbar-track {
+            background-color: #f1f1f1; 
+          }
+          
+         &::-webkit-scrollbar-thumb {
+            background: linear-gradient(90deg,transparent,var(--golden-orange));
+            border-radius: .7rem;
+            transition: background-color .6s ease-in-out;
+            cursor: pointer; 
+          }
+          
+        &::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(90deg,transparent,var(--scroll-bar-hovering));
+          }
+        >.project-card{
+            width: 24rem;
+            height: 30rem;
+            border-radius: 2rem;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            color: var(--black);
+            border: .3rem solid var(--white);
+            box-shadow: 0 10px 13px 5px rgba(0, 0, 0, 0.2);
+            >img{
+                position: absolute;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0.9;
+                transition: opacity .2s ease-out;
+                aspect-ratio: 1/1;
+            }
+            >h2{
+                position: absolute;
+                bottom: 1rem;
+                left: 3rem;
+                font-family: 'Teko', sans-serif;
+                margin: 0;
+                font-size: clamp(1rem, 0.008rem + 1.75vw, 2rem);
+                width: 80%;
+                color: var(--black);
+                z-index: 3;
+                text-transform: uppercase;
+                transition: all 1s ease-in;
+            }
+             
+            > p ,a {
+                opacity: 0;
+                position: absolute; 
+                left: 3rem;
+                z-index: 3;
+                width: 80%;
+                color: var(--primary-white);
+                bottom: 0; 
+                text-align: center;
+                background-color: white;
+                transition: bottom 1s .5S ease-out, opacity .5s ease-in; 
+            }
+            >p{
+                font-size: clamp(.8rem, 0.008rem + 1.35vw, 1.2rem);
+                font-weight: 700;
+                padding: .5rem;
+            }
+            > a {
+                bottom: 0; 
+                font-weight: 600;
+                color: var(--white);
+            } 
+            &:hover h2 {
+                bottom: 60%;
+                color: var(--black);
+                transition: all 1s ease-in-out;
+            }
+            &:hover  p {
+                bottom: 6%;
+                color: var(--black);
+                opacity: 1;
+            }
+            &:hover a {
+                bottom: 1rem;
+                opacity: 1;
+                color: var(--golden-orange);
+            }
+            &:hover img {
+                transition: opacity 1s ease-in;
+                opacity: 1;
+            }
+        }
+       
+    }
+
+}
+@media screen and (min-width: 1301px) and (max-width: 2600px) {
+    .projects-wrapper{
+        /* padding-top: 20vh !important; */
+        top: 54% !important;
+    }    
+}
+@media screen and (max-width: 1250px) {
+    .projects-wrapper{
+        /* padding-top: 20vh !important; */
+        top: 43% !important;
+    }    
+}
+@media screen and (max-width: 1000px) {
+    .projects-wrapper{
+        /* padding-top: 40% !important; */
+        top:45% !important;
+    }    
+}
+@media screen and (max-width: 890px) {
+    .projects-wrapper{
+        /* padding-top: 40% !important; */
+        top:41% !important;
+    }    
+}
+
+@media screen and (max-width: 500px) {
+    .projects-wrapper{
+        /* padding-top: 40% !important; */
+        top:50% !important;
+        grid-auto-columns: 47% !important;
+        >.project-card{
+            width: 18rem !important;
+            height: 20rem !important;
+        }
+    }    
