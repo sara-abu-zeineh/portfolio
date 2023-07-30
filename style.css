@@ -51,15 +51,9 @@ header{
     backdrop-filter: blur(5px);
     z-index: 10;
     height: 6rem;
-    > h1 {
-        font-size: clamp(1rem, -0.1639rem + 2.6604vw, 3.125rem);
-        font-weight: 900;
-        letter-spacing: .13rem;
-        color: var(--black);
+    > img {
+        width: 13rem;
         cursor: pointer;
-        transition: color .3s ease-in-out;    
-    }:hover{
-        color: var(--golden-orange);
     }
     >section{
         display: flex;
