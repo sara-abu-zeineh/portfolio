@@ -20,10 +20,6 @@ html{
     --cl :#cf9114;
     --scroll-bar-hovering:#f1c876;
 }
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-}
 body{
     width: 100vw;
 }
@@ -394,12 +390,12 @@ header{
 .timeline{
     position: relative;
     width: 60vw;
-    height: fit-content;
+    min-height: 100vh;
     margin:3% auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3rem;
+    padding: 5rem 3rem 3rem ;
     animation: move-down 1s linear forwards;
     >.container{
         padding: 1rem 5rem;
