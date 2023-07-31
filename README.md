@@ -57,10 +57,6 @@ Let's connect! Whether you want to collaborate, offer opportunities, or simply s
 - Background Color: #FFFFFF
 - Text Color: #333333
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ---
 
 Thank you for visiting my portfolio! If you have any questions or suggestions, feel free to reach out. I'm looking forward to connecting with you!
