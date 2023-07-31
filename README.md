@@ -6,12 +6,12 @@ Welcome to my portfolio! My name is Sarah Abu Zeneh, and I'm a passionate front-
 
 ## Table of Contents 📚
 
-- [About Me](##about-me)
-- [Skills](##skills)
-- [Experience](##experience)
-- [Education](##education)
-- [Projects](##projects)
-- [Contact](##contact)
+- [About Me](#about-me)
+- [Skills](#skills)
+- [Experience](#experience)
+- [Education](#education)
+- [Projects](#projects)
+- [Contact](#contact)
 
 ## About Me 🙋‍♀️
 
