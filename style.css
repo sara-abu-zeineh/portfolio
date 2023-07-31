@@ -407,6 +407,7 @@ header{
             border-radius: 50%;
             --duration : 1s;
             --interval : 1.2s;
+            animation: move-circle var(--duration) calc(var(--interval)*var(--i)) ease-in-out forwards;
             > img {
                 width: 0;
                 object-fit: contain;
@@ -415,19 +416,18 @@ header{
         }
     }
 }
-.animate-circle {
-    animation: move-circle var(--duration) calc(var(--interval)*var(--i)) ease-in-out forwards;
-}
 @keyframes move-circle {
     0% {
         opacity: 0;
         transform: rotate(0deg);
-        background: radial-gradient(circle, rgba(255, 255, 255, 0) 20%, var(--golden-orange) 60%);
+        background: radial-gradient(circle, rgba(227, 220, 220, 0) 20%, var(--golden-orange) 20%);
+
       }
       100% {
         opacity: 1;
         transform: rotate(360deg);
         background: radial-gradient(circle, rgba(255, 255, 255, 0) 20%, var(--golden-orange) 100%);
+
       }
 }
 @keyframes change-height {
@@ -435,18 +435,14 @@ header{
         width: 0rem;
     }
     100%{
-        width: 50%;
+        width: 12rem;
     }    
 }
 .timeline{
     position: relative;
     width: 60vw;
-    min-height: 100vh;
-    margin:3% auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5rem 3rem 3rem ;
+    margin:0 auto;
+    padding-top: 5rem;
     animation: move-down 1s linear forwards;
     >.container{
         padding: 1rem 5rem;
@@ -483,6 +479,7 @@ header{
                 align-items: center;
                 position: inherit;
                 >img{
+                /* border-radius: 50%; */
                 margin-right: 1rem;
                 width: 4rem;
                 height: 4rem;
@@ -538,10 +535,10 @@ header{
             content: '';
             position: absolute;
             width: .5rem;
-            height: 80vh;
+            height: 100%;
             border-radius: 40%; 
             background: var(--golden-orange);
-            top: 0;
+            top: 6%;
             left: 49%;
             margin-left:.3rem;
             z-index: 0;
@@ -553,7 +550,7 @@ header{
         .container.right{
             animation: move-right var(--duration) calc(var(--interval)*var(--i)) ease-in-out forwards;
         }
-       
+
 }
 
 /* time line forward animation  */
@@ -595,25 +592,28 @@ header{
 @media screen and (max-width: 840px){
     .timeline{
         width: 100vw;
-        padding: 0 0rem 1rem;
+        padding: 2rem 0rem 1rem;
         margin: 0;
+        background-color: antiquewhite;
         &::after{
             left: 6%;
         }
         >.container{
+            /* padding: 1rem 5rem; */
             position: inherit;
             width: 80%;
             border: .3rem solid var(--golden-orange);
             border-radius: 1.6rem;
-            margin: 0% 12% .4rem;
+            margin: 0% 12% 2rem;
+            --duration : 1s;
+            --interval : 1.4s;
             opacity: 0;
-            width: 70%;
             >i.left-arrow{
                 display: none;
             }
             >i.none{
                 display: block ;
-               
+
             }
         }
         .left{
@@ -625,12 +625,13 @@ header{
         >.container.left{
             animation: move-right var(--duration) calc(var(--interval)*var(--i)) ease-in-out forwards;
         }
-       
+
     }
 }
 @media screen and (max-width: 480px){
     .timeline{
         width: 100vw;
+        background-color: rgb(224, 218, 210);
         margin: 0;
         &::after{
             left: 1.2rem;
