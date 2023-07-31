@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Satisfy&family=Teko&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/94c3cf904d.js" crossorigin="anonymous"></script>
+        <title>Sarah Abu Zeneh</title>
+    </head>
+    <body>
+      <header class="header-section">
+            <img src="utils/images/logo.PNG" alt="saaz">
+            <div class="div-section">
+                <nav class="nav-list">
+                    <ul class="ul-list">
+                        <li class="ul-item active" onclick="closeNavBar()">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="ul-item " onclick="closeNavBar()">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="ul-item " onclick="closeNavBar()">
+                            <a href="#edu">Education</a>
+                        </li>
+                        <li class="ul-item " onclick="closeNavBar()">
+                            <a href="#project">Projects</a>
+                        </li>
+                        <li class="ul-item " onclick="closeNavBar()">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>      
+                </nav>
+                <i id="hidden-bar" class=" fa-solid fa-bars"></i>
+            </div>
+        </header>
+        <div id="drop-down" class="drop-down">
+            <ul class="ul-list">
+                <li class="ul-item active">
+                    <a href="#">Home</a>
+                </li>
+                <li class="ul-item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="ul-item">
+                    <a href="#edu">Education</a>
+                </li>
+                <li class="ul-item">
+                    <a href="#project">Projects</a>
+                </li>
+                <li class="ul-item">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <section id="home">
+            <p class="welcoming-text">Hi there! My name is Sarah and I'm a
+                <span>front-end developer</span>
+            </p>
+            <p class="tagline">
+                Unlocking creativity, one mesmerizing masterpiece at a time - Welcome to my captivating portfolio!
+            </p>
+            <a href="utils/SAZ.pdf" title="Sarah's CV" class="download" download="sarah-abu-zeneh-CV">Download my CV</a>
+        </section>
+      <section id="about">
+            <div class="image-section">
+                <div class="image-content">
+                    <img src="utils/images/sarah-img.jpeg" alt="my personal image">
+                </div>
+            </div>
+            <div class="cards-section">
+                <div class="cards">
+                    <div class="card-container">
+                        <div class="card">
+                            <i class="fa-solid fa-puzzle-piece"></i>
+                            <h3>Experience</h3>
+                            <h4>+1 year</h4>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h3>Complected</h3>
+                            <h4>+10 projects</h4>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <i class="fa-solid fa-headset"></i>
+                            <h3>Support</h3>
+                            <h4>Online 24/7</h4>
+                        </div>
+                    </div>
+                </div>
+                <h4>As a junior front-end developer, I specialize in crafting web pages
+                    with a strong emphasis on UI/UX (user interface/user experience). 
+                    My insatiable thirst for knowledge drives me to continuously expand 
+                    my skill set and capabilities. Embracing my inner tech geek, I find 
+                    immense joy in both absorbing knowledge from others and generously 
+                    sharing my own expertise whenever the opportunity arises.
+                </h4>
+            </div>
+        </section>
+      <section id="edu" class="timeline">
+                <div class="container right" style="--i : 0">
+                    <!-- <div class="dot">
+                        <div class="inner"></div>
+                    </div> -->
+                    <div class="CompanyLogo">
+                        <img src="utils/images/foothill.png" alt="Foothill technology solution" title="Foothill technology solution">
+                        <a href="" target="_blank">
+                            <h3>                
+                                Foothill technology solution
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="text-card ">
+                        <small>June 2023 - current</small>
+                        <p>
+                            During a 4-month front-end internship, participants gain practical 
+                            experience in web development, including UI design, HTML, CSS, 
+                            JavaScript, and React, their skills and expertise in the field.</p>
+                    </div>
+                    <i class="fa-solid fa-caret-left right-arrow"></i>
+                </div>
+                <div class="container left" style="--i : 1">
+                    
+                    <div class="CompanyLogo">
+                        <img src="utils/images/js.png" title="JavaScript" alt="JavaScript">                    
+                        <a href="" target="_blank">
+                            <h3>                
+                                Advanced JavaScript Online Course
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="text-card ">
+                        <small>April 2023 - Jun 2023</small>
+                        <p>An advanced JS programming online course teaches experienced developers 
+                            advanced skills to build sophisticated web applications using advanced 
+                            language features and cutting-edge techniques.</p>
+                    </div>
+                    <i class="fa-solid fa-caret-right left-arrow"></i>
+                    <i class="fa-solid fa-caret-left none"></i>
+                </div>
+                <div class="container right" style="--i : 2">
+                    <!-- <div class="dot">
+                        <div class="inner"></div>
+                    </div> -->
+                    <div class="CompanyLogo">
+                        <img src="/utils/images/amideast.png" title="AESP" alt="Amideast">
+                        <a href="" target="_blank">
+                            <h3>                
+                                AESP - Amideast
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="text-card ">
+                        <small>February 2023 - May 2023</small>
+                        <p>The American English Scholarship Program (AESP) aims to make unemployed 
+                            university graduates more competitive in the job market. It's a 120-hour 
+                            program funded by the American House.</p>
+                    </div>
+                    <i class="fa-solid fa-caret-left right-arrow"></i>
+                </div>
+                <div class="container left" style="--i : 3">
+                    <div class="CompanyLogo">
+                        <img src="utils/images/ppu.png" title="PPU" alt="Palestine Polytechnic University">
+                        <a href="" target="_blank">
+                            <h3>                
+                                Palestine Polytechnic University
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="text-card ">
+                        <small>August 2018 - January 2023</small>
+                        <p>A Bachelor's degree in Computer Engineering focuses on the study and application 
+                            of hardware and software principles to design, develop, and optimize computer
+                            systems and technologies.</p>
+                    </div>
+                    <i class="fa-solid fa-caret-right left-arrow"></i>
+                    <i class="fa-solid fa-caret-left none"></i>
+                </div>
+        </section>
+              <section class="projects" id="project">
+            <div class="background">
+                <p>My Recent Project</p>
+                <h2>Explore my diverse projects in technology, front-end development, 
+                                    image processing, and hardware systems in the "My Projects" 
+                                    section of my portfolio. Witness my proficiency and dedication 
+                                    in these areas. Thank you for visiting!</h2>
+            </div>
+            <div class="projects-wrapper snaps-inline">
+                <div class="project-card ">
+                    <h2>Object Categorization for Industrial Application</h2>
+                    <p>
+                        The system is a cost-effective object categorization system that 
+                        uses deep learning to accurately categorize three types of objects 
+                        with 90% accuracy. It has an average inference time of 500ms, making 
+                        it suitable for efficient automated sorting on assembly lines.
+                    </p>
+                    <a href="https://drive.google.com/file/d/17zjoImbSUaY_5JnwhaP7VXcriBlGRVYD/view">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Click here
+                    </a>
+                    <img src="utils/images/object-categorization.PNG" alt="object categorization">
+                </div>
+                <div class="project-card">
+                    <h2>Food Delivery App</h2>
+                    <p>
+                        It's a full stack food delivery application using Reactjs, 
+                        Firebase, Framer motion, Tailwind css. This projects allows 
+                        to the user to add new items and to maintain all the things 
+                        over the firestore cloud database
+                    </p>
+                    <a href="https://www.google.com/url?q=https://github.com/saraAAZ/food-delivery-app&sa=D&source=docs&ust=1690676803667102&usg=AOvVaw3JPODkcK7rjMWF8IzKOASY">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Click here
+                    </a>
+                    <img src="utils/images/food-app.PNG" alt="food app">
+                </div>
+                <div class="project-card">
+                    <h2>CRM system</h2>
+                    <p>
+                        Simple CRM system building with ReactJS aims to store customer and 
+                        prospect contact information and identify sales opportunities.
+                    </p>
+                    <a href="">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Click here
+                    </a>
+                    <img src="utils/images/crm.PNG" alt="crm system">
+                </div>
+                <div class="project-card">
+                    <h2>Movie Catalog Application</h2>
+                    <p>
+                        Node.js CLI app for managing movie catalog, utilizing OOP, 
+                        prototypes, ES6 features, async programming, Fetch API, file 
+                        handling, and modules.
+                    </p>
+                    <a href="https://github.com/sara-abu-zeineh/movie-catalog-application/tree/main">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Click here
+                    </a>
+                    <img src="utils/images/movie-catalog.PNG" alt="movie catalog">
+                </div>
+                <div class="project-card">
+                    <h2>PCA</h2>
+                    <p>
+                        Code snippet implementing PCA algorithm in MATLAB for dimensionality 
+                        reduction, feature extraction, and data visualization, widely used in 
+                        image processing and pattern recognition
+                    </p>
+                    <a href="https://github.com/sara-abu-zeineh/PCA">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Click here
+                    </a>
+                    <img src="utils/images/pca.PNG" alt="PCA">
+                </div>
+                <div class="project-card">
+                    <h2>Room automation system</h2>
+                    <p>
+                        A room automation system that monitors temperature, light level, 
+                        and smoke. It controls the fan speed based on temperature, adjusts 
+                        LED brightness according to light level, and generates a fire alarm 
+                        while allowing user ON/OFF control with a switch.
+                    </p>
+                    <a href="">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Click here
+                    </a>
+                    <img src="utils/images/room.png" alt="room automation system">
+                </div>
+                <div class="project-card">
+                    <h2>SIC Assembler</h2>
+                    <p>
+                        "Python-based SIC assembler simulator with pass 1 generating intermediate 
+                        file for pass 2, displaying program details and error list.
+                    </p>
+                    <a href="https://github.com/sara-abu-zeineh/SIC_ASSEMBLER">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Click here
+                    </a>
+                    <img src="utils/images/sic.PNG" alt="SIC Assembler">
+                </div>
+            </div>
+        </section>
+      <section id="contact">
+            <h2>lets Create
+                <span>
+                    Magic</span>
+                Together</h2>
+            <h4>"I'm excited to explore new opportunities and collaborations,
+                so let's connect and bring innovative ideas to life – together.</h4>
+            <form class="contact-form" action="https://formspree.io/f/xzblzjeo" method="POST">
+                <div class="inputs-wrapper">
+                    <input type="email" name="email" placeholder="your email" required>
+                    <input type="text" name="text-input" placeholder="what do you think?" required>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+            <div class="accounts-links">
+                <a href="mailto:sarah.abuzeneh@gmail.com" title="mail me to">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sarah-abu-zena/" rel='noopener noreferrer' title="linked in account" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/sara-abu-zeineh" rel='noopener noreferrer' title="github account" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </section>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+  <script src="script.js" defer></script>
+</html>
