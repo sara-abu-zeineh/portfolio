@@ -4,6 +4,9 @@
 
 Welcome to my portfolio! My name is Sarah Abu Zeneh, and I'm a passionate front-end developer with a focus on UI/UX design. This portfolio showcases my skills, projects, and experience in the field of web development.
 
+
+You can check out my portfolio by visiting the following link:[View Portfolio](https://sara-abu-zeineh.github.io/portfolio/)🥳👌
+
 ## Table of Contents 📚
 
 - [About Me](#about-me)
