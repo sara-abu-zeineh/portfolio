@@ -438,6 +438,34 @@ header{
         width: 50%;
     }    
 }
+@media screen and (max-width :75rem) {
+    #skills {
+        > .circles {
+            width: 80%; 
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            & > .circle {
+                width: calc(10rem + 2vw);
+                height: calc(10rem + 2vw);
+            }
+        }
+    }
+}
+@media screen and (max-width :45rem) {
+    #skills {
+        > .circles {
+            width: 80%; 
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            & > .circle {
+                width: calc(8rem + 2vw);
+                height: calc(8rem + 2vw);
+            }
+        }
+    }
+}
 .timeline{
     position: relative;
     width: 60vw;
