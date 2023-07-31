@@ -55,7 +55,7 @@ header{
         width: 13rem;
         cursor: pointer;
     }
-    >section{
+    >.div-section{
         display: flex;
         align-items: center;
         .ul-list{
@@ -68,11 +68,7 @@ header{
                 letter-spacing: .12rem;
                 transition: color .2s ease-in-out;
                 &:hover{
-                    color: var(--golden-orange);
-                }
-                &:focus,section:focus-within a{
-                    color: black;
-                    text-shadow: 2px 2px 1.5px var(--golden-orange);
+                    color: rgb(72, 97, 34);
                 }
             }
         }
@@ -87,13 +83,17 @@ header{
 .drop-down{
     display: none;
 }
+.active a{
+    color: rgb(219, 20, 20) !important;
+    text-shadow: 2px 2px 1.5px var(--golden-orange);
+}
 /* Media Query for Header */
 @media (max-width: 780px) {
     header{
         .nav-list{
             display: none;
         }
-        >section{
+        >.div-section{
         #hidden-bar{
             display:block;
         }}
