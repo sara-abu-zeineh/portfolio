@@ -185,6 +185,7 @@ header{
         outline: 2px solid var(--white); 
         outline-offset: -5px;  
         transition: all .3s ease-in-out; 
+        cursor: url(utils/images/pdf.png),auto;
     }:hover{
         outline-offset: 5px;  
         outline-color: var(--golden-orange);
