@@ -59,3 +59,20 @@ const sectionObserver = new IntersectionObserver((entries, observer) => {
 sections.forEach((section) => {
   sectionObserver.observe(section);
 });
+
+
+const circles = document.querySelectorAll('.circle'); 
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-circle'); 
+    } else {
+      entry.target.classList.remove('animate-circle'); 
+    }
+  });
+});
+
+circles.forEach(circle => {
+  observer.observe(circle); 
+});
