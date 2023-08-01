@@ -703,7 +703,7 @@ header{
         color: var(--white);
         flex-direction: column;
         align-items: center;
-        padding: 17vh 6rem 2rem;
+        padding: 13vh 6rem 2rem;
         background-color: var(--golden-orange);
         box-shadow: -1px 0px 18px -1px var(--golden-orange-shadow)inset;
         -webkit-box-shadow: -1px 0px 18px -1px var(--golden-orange-shadow) inset;
@@ -713,7 +713,7 @@ header{
             font-size: clamp(3.25rem, 0.008rem + 4.975vw, 5.375rem);
         }
         >h2{
-            font-size: clamp(1.25rem, 0.008rem + 1.7vw, 2rem);
+            font-size: clamp(2.25rem, 0.008rem + 1.7vw, 2rem);
             text-align: center;
             margin-bottom: .4em;
             width: 70vw;
@@ -854,7 +854,7 @@ header{
 }
 @media screen and (max-width: 890px) {
     .projects-wrapper{
-        top:41% !important;
+        top:45% !important;
     }    
 }
 
