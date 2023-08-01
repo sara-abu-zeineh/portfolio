@@ -7,7 +7,7 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-    overflow: hidden;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
 :root{
@@ -489,7 +489,13 @@ header{
                 height: fit-content;
                 min-height: calc(73% - 2rem); 
                 >small{
-                    margin-bottom: 1rem;
+                    margin-bottom: .4rem;
+                    font-weight: 900;
+                    font-size: clamp(1.1125rem, 0.0641rem + 1.9607vw, 1rem);
+                }
+                >p{
+                    font-weight: 600;
+                    font-size: clamp(1.0125rem, 0.0641rem + 1.0607vw, 1.1rem);
                 }
             }
             >i{
@@ -528,7 +534,7 @@ header{
             height: 80vh;
             border-radius: 40%; 
             background: var(--golden-orange);
-            top: 2rem;
+            top: 1rem;
             left: 49%;
             margin-left:.3rem;
             z-index: 0;
