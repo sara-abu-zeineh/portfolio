@@ -7,7 +7,7 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow: hidden;
     scroll-snap-type: y mandatory;
 }
 :root{
@@ -734,8 +734,10 @@ header{
     }
     >.projects-wrapper{
         overflow-x: auto;
-        width: 100vw;
+        width: 99vw;
         height: fit-content;
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, white 5%, white 95%, transparent 100%);
+        mask-image: linear-gradient linear-gradient(to right, transparent 0%, white 5%, white 95%, transparent 100%);
         overscroll-behavior-inline: contain;
         scroll-snap-type: inline mandatory; 
         display: grid;
@@ -743,8 +745,9 @@ header{
         grid-auto-flow: column;
         grid-auto-columns: calc(24rem + 1vw);
         position: absolute;
-        padding: 1rem 0 1rem;
+        padding: 1rem 0rem 1rem;
         top: 45vh;
+        left: 0.5rem;
         >*{
             scroll-snap-align: start;
         }
@@ -786,7 +789,6 @@ header{
                 left: 0;
                 opacity: 0.9;
                 transition: opacity .2s ease-out;
-                aspect-ratio: 1/1;
             }
             >h2{
                 position: absolute;
