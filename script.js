@@ -14,8 +14,8 @@ hiddenBarIcon.addEventListener('click', () => {
 });
 
 function closeNavBar() {
-    // dropDownMenu.classList.remove('open');
-    // hiddenBarIcon.classList = 'fa-solid fa-bars';
+    dropDownMenu.classList.remove('open');
+    hiddenBarIcon.classList = 'fa-solid fa-bars';
     console.log("sara");
 }
 
