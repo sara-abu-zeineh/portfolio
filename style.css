@@ -720,7 +720,7 @@ header{
             font-size: clamp(3.25rem, 0.008rem + 4.975vw, 5.375rem);
         }
         >h2{
-            font-size: clamp(2.25rem, 0.008rem + 1.7vw, 2rem);
+            font-size: clamp(1.8rem, 0.008rem + 1.7vw, 2rem);
             text-align: center;
             margin-bottom: .4em;
             width: 70vw;
